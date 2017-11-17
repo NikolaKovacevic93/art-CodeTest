@@ -106,7 +106,7 @@ public class LoginActivity extends AppCompatActivity {
                 progressBarHolder.setVisibility(View.GONE);
             }
         });
-        VolleySingleton.getVolleySingletonInstance(this).addTorequestQueue(jsonObjectRequest);
+        VolleySingleton.getInstance(this).addTorequestQueue(jsonObjectRequest);
     }
 
     private void onLoginSuccess(){

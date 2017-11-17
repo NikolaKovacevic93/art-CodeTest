@@ -28,8 +28,6 @@ import com.squareup.picasso.Picasso;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.HashMap;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -98,7 +96,7 @@ public class DetailsActivty extends AppCompatActivity {
 
                     restaurant.setIntro(restaurantJsonObject.getString("intro"));
                     restaurant.setName(restaurantJsonObject.getString("name"));
-                    restaurant.setOpen(restaurantJsonObject.getBoolean("is_open"));
+                    restaurant.setIsOpen(restaurantJsonObject.getBoolean("is_open"));
                     restaurant.setWelcomeMessage(restaurantJsonObject.getString("welcome_message"));
                     restaurant.setThumbnailMedium(restaurantJsonObject.getJSONObject("images").getString("thumbnail_medium"));
                 } catch (JSONException e) {
@@ -114,7 +112,7 @@ public class DetailsActivty extends AppCompatActivity {
                 Toast.makeText(DetailsActivty.this, R.string.failed_to_load_data_toast_message, Toast.LENGTH_SHORT).show();
             }
         });
-        VolleySingleton.getVolleySingletonInstance(this).addTorequestQueue(jsonObjectRequest);
+        VolleySingleton.getInstance(this).addTorequestQueue(jsonObjectRequest);
     }
 
     @Override
