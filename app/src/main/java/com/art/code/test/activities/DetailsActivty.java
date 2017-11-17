@@ -83,6 +83,7 @@ public class DetailsActivty extends AppCompatActivity {
 
         } catch (JSONException e) {
             e.printStackTrace();
+            Log.d(TAG, "---> " + e.getMessage());
         }
 
 
