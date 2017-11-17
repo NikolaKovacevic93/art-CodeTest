@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ArtAndCodeTest</string>
+
+    <!-- Login activity-->
+    <string name="login_email_hint">example@example.com</string>
+    <string name="login_password_hint">password</string>
+    <string name="login_btn_txt">Login</string>
+
+    <!-- Details activity -->
+    <string name="restaurant_open_message">Restaurant is open</string>
+    <string name="restaurant_closed_message">Restaurant is closed</string>
+
+    <!-- Toast messages -->
+    <string name="login_failed_toast_message">Login failed</string>
+    <string name="failed_to_load_data_toast_message">Failed to load data</string>
+    <string name="validation_email_error">Enter your email</string>
+    <string name="validation_password_error">Enter your password</string>
+</resources>

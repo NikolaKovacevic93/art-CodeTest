@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f57c00</color>
+    <color name="colorPrimaryDark">#bb4d00</color>
+    <color name="colorAccent">#ffad42</color>
+
+    <color name="colorGreenOpen">#80ffcc</color>
+    <color name="colorRedClosed">#ff5c33</color>
+
+    <!-- ic colors -->
+    <color name="colorWhite">#fff</color>
+    <!-- text colors -->
+    <color name="colorTextStandard">#b3b3b3</color>
+</resources>
